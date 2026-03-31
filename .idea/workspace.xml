@@ -4,86 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7b3375ab-9981-4908-8757-f2a0c6a7300b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/javafx_base.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CreditUnionManagementSystem.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SQLQuery1.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/fxml/login.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/fxml/member_dashboard.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/fxml/staff_dashboard.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/styles/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/creditunion/FullDiagnostics.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/creditunion/GenerateHash.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/creditunion/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/creditunion/TestDatabase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/creditunion/TestLogin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/creditunion/TestResources.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/creditunion/TestTableView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/creditunion/VerifyData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/creditunion/config/DatabaseConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/creditunion/controller/LoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/creditunion/controller/MemberDashboardController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/creditunion/controller/StaffDashboardController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/creditunion/dao/AccountDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/creditunion/dao/MemberDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/creditunion/dao/StaffDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/creditunion/dao/TransactionDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/creditunion/model/Account.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/creditunion/model/Member.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/creditunion/model/Staff.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/creditunion/model/Transaction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/creditunion/service/AccountService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/creditunion/service/AuthService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/creditunion/service/MemberService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/creditunion/service/TransactionService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/creditunion/utils/AlertUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/creditunion/FullDiagnostics.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/creditunion/GenerateHash.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/creditunion/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/creditunion/TestDatabase.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/creditunion/TestLogin.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/creditunion/TestResources.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/creditunion/TestTableView.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/creditunion/VerifyData.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/creditunion/config/DatabaseConfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/creditunion/controller/LoginController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/creditunion/controller/MemberDashboardController$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/creditunion/controller/MemberDashboardController$2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/creditunion/controller/MemberDashboardController$3.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/creditunion/controller/MemberDashboardController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/creditunion/controller/StaffDashboardController$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/creditunion/controller/StaffDashboardController$2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/creditunion/controller/StaffDashboardController$3.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/creditunion/controller/StaffDashboardController$4.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/creditunion/controller/StaffDashboardController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/creditunion/dao/AccountDAO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/creditunion/dao/MemberDAO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/creditunion/dao/StaffDAO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/creditunion/dao/TransactionDAO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/creditunion/model/Account.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/creditunion/model/Member.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/creditunion/model/Staff.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/creditunion/model/Transaction.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/creditunion/service/AccountService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/creditunion/service/AuthService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/creditunion/service/MemberService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/creditunion/service/TransactionService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/creditunion/utils/AlertUtils.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/fxml/login.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/fxml/member_dashboard.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/fxml/staff_dashboard.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/styles/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-    </list>
+    <list default="true" id="7b3375ab-9981-4908-8757-f2a0c6a7300b" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -134,7 +55,7 @@
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "junie.onboarding.icon.badge.shown": "true",
     "kotlin-language-version-configured": "true",
@@ -220,7 +141,7 @@
       <workItem from="1774857684474" duration="1048000" />
       <workItem from="1774859140274" duration="94000" />
       <workItem from="1774870185433" duration="6877000" />
-      <workItem from="1774975673371" duration="830000" />
+      <workItem from="1774975673371" duration="1565000" />
     </task>
     <servers />
   </component>
