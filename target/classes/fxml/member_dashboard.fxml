@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+
+<VBox spacing="0" xmlns="http://javafx.com/javafx/17"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.creditunion.controller.MemberDashboardController">
+
+    <MenuBar style="-fx-background-color: #0d47a1;">
+        <Menu text="File" style="-fx-text-fill: white;">
+            <MenuItem text="Refresh" onAction="#handleRefresh" style="-fx-text-fill: #0d47a1;"/>
+            <SeparatorMenuItem/>
+            <MenuItem text="Logout" onAction="#handleLogout" style="-fx-text-fill: #0d47a1;"/>
+        </Menu>
+    </MenuBar>
+
+    <HBox alignment="CENTER_LEFT" spacing="10" style="-fx-background-color: linear-gradient(to right, #0d47a1, #1976d2); -fx-padding: 18 25;">
+        <Label fx:id="welcomeLabel" style="-fx-text-fill: white; -fx-font-size: 18px; -fx-font-weight: bold;"/>
+        <Region HBox.hgrow="ALWAYS"/>
+        <Label text="Member Dashboard" style="-fx-text-fill: rgba(255,255,255,0.9); -fx-font-size: 14px;"/>
+    </HBox>
+
+    <TabPane VBox.vgrow="ALWAYS" style="-fx-background-color: #e8f0fe;">
+        
+        <!-- Account Overview Tab -->
+        <Tab text="Account Overview" closable="false">
+            <ScrollPane fitToWidth="true" style="-fx-background-color: #e8f0fe;">
+                <VBox spacing="25" style="-fx-padding: 30;">
+                    
+                    <!-- Member Information Card -->
+                    <VBox spacing="15" style="-fx-background-color: white; -fx-padding: 25; -fx-border-radius: 15px; -fx-background-radius: 15px; -fx-border-color: #bbdef5; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 5, 0, 0, 2);">
+                        <HBox spacing="10" alignment="CENTER_LEFT">
+                            <Label text="Member Information" style="-fx-font-size: 18px; -fx-font-weight: bold; -fx-text-fill: #0d47a1;"/>
+                        </HBox>
+                        <Separator style="-fx-background-color: #bbdef5;"/>
+                        <GridPane hgap="20" vgap="15">
+                            <Label text="Member ID:" GridPane.rowIndex="0" GridPane.columnIndex="0" style="-fx-text-fill: #666;"/>
+                            <Label fx:id="memberIdLabel" GridPane.rowIndex="0" GridPane.columnIndex="1" style="-fx-font-weight: bold; -fx-text-fill: #333;"/>
+                            
+                            <Label text="Full Name:" GridPane.rowIndex="1" GridPane.columnIndex="0" style="-fx-text-fill: #666;"/>
+                            <Label fx:id="memberNameLabel" GridPane.rowIndex="1" GridPane.columnIndex="1" style="-fx-font-weight: bold; -fx-text-fill: #333;"/>
+                            
+                            <Label text="Email:" GridPane.rowIndex="2" GridPane.columnIndex="0" style="-fx-text-fill: #666;"/>
+                            <Label fx:id="memberEmailLabel" GridPane.rowIndex="2" GridPane.columnIndex="1" style="-fx-text-fill: #333;"/>
+                            
+                            <Label text="Phone:" GridPane.rowIndex="3" GridPane.columnIndex="0" style="-fx-text-fill: #666;"/>
+                            <Label fx:id="memberPhoneLabel" GridPane.rowIndex="3" GridPane.columnIndex="1" style="-fx-text-fill: #333;"/>
+                            
+                            <Label text="Address:" GridPane.rowIndex="4" GridPane.columnIndex="0" style="-fx-text-fill: #666;"/>
+                            <Label fx:id="memberAddressLabel" GridPane.rowIndex="4" GridPane.columnIndex="1" style="-fx-text-fill: #333;"/>
+                            
+                            <Label text="Member Since:" GridPane.rowIndex="5" GridPane.columnIndex="0" style="-fx-text-fill: #666;"/>
+                            <Label fx:id="memberSinceLabel" GridPane.rowIndex="5" GridPane.columnIndex="1" style="-fx-text-fill: #333;"/>
+                        </GridPane>
+                    </VBox>
+
+                    <!-- Account Information Card -->
+                    <VBox spacing="15" style="-fx-background-color: white; -fx-padding: 25; -fx-border-radius: 15px; -fx-background-radius: 15px; -fx-border-color: #bbdef5; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 5, 0, 0, 2);">
+                        <HBox spacing="10" alignment="CENTER_LEFT">
+                            <Label text="Account Information" style="-fx-font-size: 18px; -fx-font-weight: bold; -fx-text-fill: #0d47a1;"/>
+                        </HBox>
+                        <Separator style="-fx-background-color: #bbdef5;"/>
+                        <GridPane hgap="20" vgap="15">
+                            <Label text="Select Account:" GridPane.rowIndex="0" GridPane.columnIndex="0" style="-fx-text-fill: #666;"/>
+                            <ComboBox fx:id="accountSelector" GridPane.rowIndex="0" GridPane.columnIndex="1" prefWidth="220" style="-fx-background-color: #f5f9ff;"/>
+                            
+                            <Label text="Account Number:" GridPane.rowIndex="1" GridPane.columnIndex="0" style="-fx-text-fill: #666;"/>
+                            <Label fx:id="accountNumberLabel" GridPane.rowIndex="1" GridPane.columnIndex="1" style="-fx-font-weight: bold; -fx-font-size: 16px; -fx-text-fill: #0d47a1;"/>
+                            
+                            <Label text="Account Type:" GridPane.rowIndex="2" GridPane.columnIndex="0" style="-fx-text-fill: #666;"/>
+                            <Label fx:id="accountTypeLabel" GridPane.rowIndex="2" GridPane.columnIndex="1" style="-fx-text-fill: #333;"/>
+                            
+                            <Label text="Current Balance:" GridPane.rowIndex="3" GridPane.columnIndex="0" style="-fx-text-fill: #666;"/>
+                            <Label fx:id="balanceLabel" GridPane.rowIndex="3" GridPane.columnIndex="1" style="-fx-font-size: 28px; -fx-font-weight: bold; -fx-text-fill: #27ae60;"/>
+                            
+                            <Label text="Status:" GridPane.rowIndex="4" GridPane.columnIndex="0" style="-fx-text-fill: #666;"/>
+                            <Label fx:id="accountStatusLabel" GridPane.rowIndex="4" GridPane.columnIndex="1" style="-fx-font-weight: bold; -fx-text-fill: #4caf50;"/>
+                            
+                            <Label text="Account Created:" GridPane.rowIndex="5" GridPane.columnIndex="0" style="-fx-text-fill: #666;"/>
+                            <Label fx:id="accountCreatedLabel" GridPane.rowIndex="5" GridPane.columnIndex="1" style="-fx-text-fill: #333;"/>
+                        </GridPane>
+                    </VBox>
+
+                    <!-- Deposit Card -->
+                    <VBox spacing="15" style="-fx-background-color: white; -fx-padding: 25; -fx-border-radius: 15px; -fx-background-radius: 15px; -fx-border-color: #bbdef5; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 5, 0, 0, 2);">
+                        <HBox spacing="10" alignment="CENTER_LEFT">
+                            <Label text="Make a Deposit" style="-fx-font-size: 18px; -fx-font-weight: bold; -fx-text-fill: #0d47a1;"/>
+                        </HBox>
+                        <Separator style="-fx-background-color: #bbdef5;"/>
+                        <HBox spacing="20" alignment="CENTER_LEFT">
+                            <Label text="Amount:" style="-fx-text-fill: #666; -fx-font-size: 14px;"/>
+                            <TextField fx:id="depositAmountField" promptText="Enter deposit amount" prefWidth="220" style="-fx-background-color: #f5f9ff; -fx-border-color: #bbdef5; -fx-border-radius: 5px; -fx-padding: 8;"/>
+                            <Button text="Deposit Now" onAction="#handleDeposit" style="-fx-background-color: #27ae60; -fx-text-fill: white; -fx-font-weight: bold; -fx-padding: 10 25; -fx-background-radius: 5px;"/>
+                            <Button text="Refresh" onAction="#handleRefresh" style="-fx-background-color: #3498db; -fx-text-fill: white; -fx-padding: 10 25; -fx-background-radius: 5px;"/>
+                        </HBox>
+                        <Label fx:id="depositMessageLabel" style="-fx-text-fill: #27ae60; -fx-font-weight: bold;"/>
+                    </VBox>
+                </VBox>
+            </ScrollPane>
+        </Tab>
+
+        <!-- Transaction History Tab -->
+        <Tab text="Transaction History" closable="false">
+            <VBox spacing="20" style="-fx-padding: 25;">
+                <VBox spacing="15" style="-fx-background-color: white; -fx-padding: 20; -fx-border-radius: 12px; -fx-background-radius: 12px; -fx-border-color: #bbdef5;">
+                    <Label text="Filter Transactions by Date" style="-fx-font-size: 14px; -fx-font-weight: bold; -fx-text-fill: #0d47a1;"/>
+                    <HBox spacing="15" alignment="CENTER_LEFT">
+                        <Label text="From:" style="-fx-text-fill: #666;"/>
+                        <DatePicker fx:id="startDatePicker" promptText="Select Start Date" style="-fx-background-color: #f5f9ff;"/>
+                        <Label text="To:" style="-fx-text-fill: #666;"/>
+                        <DatePicker fx:id="endDatePicker" promptText="Select End Date" style="-fx-background-color: #f5f9ff;"/>
+                        <Button text="Apply Filter" onAction="#handleApplyDateFilter" style="-fx-background-color: #3498db; -fx-text-fill: white; -fx-padding: 8 20; -fx-background-radius: 4px;"/>
+                        <Button text="Clear Filter" onAction="#handleClearDateFilter" style="-fx-background-color: #95a5a6; -fx-text-fill: white; -fx-padding: 8 20; -fx-background-radius: 4px;"/>
+                    </HBox>
+                </VBox>
+                <TableView fx:id="transactionTable" VBox.vgrow="ALWAYS" style="-fx-background-color: white; -fx-border-radius: 10px; -fx-border-color: #bbdef5; -fx-border-width: 1;">
+                    <columns>
+                        <TableColumn fx:id="typeColumn" text="Type" prefWidth="150"/>
+                        <TableColumn fx:id="amountColumn" text="Amount" prefWidth="130"/>
+                        <TableColumn fx:id="dateColumn" text="Date" prefWidth="170"/>
+                        <TableColumn fx:id="descriptionColumn" text="Description" prefWidth="350"/>
+                    </columns>
+                    <placeholder>
+                        <Label text="No transactions found" style="-fx-text-fill: #999; -fx-font-size: 14px;"/>
+                    </placeholder>
+                </TableView>
+            </VBox>
+        </Tab>
+
+        <!-- Account Statistics Tab -->
+        <Tab text="Account Statistics" closable="false">
+            <VBox spacing="30" alignment="CENTER" style="-fx-padding: 40; -fx-background-color: #e8f0fe;">
+                <Label text="Account Summary" style="-fx-font-size: 22px; -fx-font-weight: bold; -fx-text-fill: #0d47a1;"/>
+                <HBox spacing="30" alignment="CENTER" HBox.hgrow="ALWAYS">
+                    <VBox spacing="15" alignment="CENTER" style="-fx-background-color: white; -fx-padding: 30; -fx-border-radius: 15px; -fx-background-radius: 15px; -fx-min-width: 200; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 5, 0, 0, 2);" HBox.hgrow="ALWAYS">
+                        <Label text="Total Deposits" style="-fx-font-size: 16px; -fx-text-fill: #666;"/>
+                        <Label fx:id="totalDepositsLabel" style="-fx-font-size: 28px; -fx-font-weight: bold; -fx-text-fill: #27ae60;"/>
+                    </VBox>
+                    <VBox spacing="15" alignment="CENTER" style="-fx-background-color: white; -fx-padding: 30; -fx-border-radius: 15px; -fx-background-radius: 15px; -fx-min-width: 200; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 5, 0, 0, 2);" HBox.hgrow="ALWAYS">
+                        <Label text="Total Payouts" style="-fx-font-size: 16px; -fx-text-fill: #666;"/>
+                        <Label fx:id="totalPayoutsLabel" style="-fx-font-size: 28px; -fx-font-weight: bold; -fx-text-fill: #e74c3c;"/>
+                    </VBox>
+                    <VBox spacing="15" alignment="CENTER" style="-fx-background-color: white; -fx-padding: 30; -fx-border-radius: 15px; -fx-background-radius: 15px; -fx-min-width: 200; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 5, 0, 0, 2);" HBox.hgrow="ALWAYS">
+                        <Label text="Current Balance" style="-fx-font-size: 16px; -fx-text-fill: #666;"/>
+                        <Label fx:id="currentBalanceLabel" style="-fx-font-size: 28px; -fx-font-weight: bold; -fx-text-fill: #3498db;"/>
+                    </VBox>
+                </HBox>
+            </VBox>
+        </Tab>
+    </TabPane>
+</VBox>
